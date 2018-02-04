@@ -1,0 +1,10 @@
+<ul class="news-list">
+  <li *ngFor="let news of newsStore.news | async;" class="row" (click)="openNews(news.id)">
+    <h1 class="row__title">
+      {{news.title}}
+    </h1>
+    <span class="row__date">
+      {{(news.date | date:'yyyy-MM-dd') || '&ndash;'}}
+    </span>
+  </li>
+</ul>

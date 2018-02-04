@@ -1,0 +1,41 @@
+@import "../../styles/settings/responsive";
+
+:host {
+  width: 100%;
+
+  .news-list {
+    margin: 0;
+
+    @media screen and (min-width: map-get($breakpoints, small)) {
+      margin: 0rem 1rem;
+    }
+
+    list-style: none;
+    padding: 0;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 3rem;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #2C2933;
+
+      @media screen and (min-width: map-get($breakpoints, small)) {
+        &:hover {
+          color: blue;
+        }
+      }
+
+      @media screen and (max-width: map-get($breakpoints, small)) {
+        padding: 0rem 1rem;
+      }
+
+      .row__title {
+        font-size: inherit;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+}

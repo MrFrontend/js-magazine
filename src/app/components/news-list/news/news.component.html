@@ -1,0 +1,5 @@
+<div class="news">
+  <h1 class="news--title">{{news?.title || ''}}</h1>
+  <span [innerHtml]="news?.text || ''"></span>
+  <a [routerLink]="['/']">Back</a>
+</div>

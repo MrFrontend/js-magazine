@@ -1,0 +1,8 @@
+@import "./styles/settings/settings";
+
+:host {
+  .app--content {
+    margin-top: $navigation-height;
+    display: flex;
+  }
+}
