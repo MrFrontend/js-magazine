@@ -8,3 +8,6 @@
     </span>
   </li>
 </ul>
+<span *ngIf="(newsStore.news | async)?.length === 0" class="no-news">
+  Unfortunately we can not show any news.
+</span>

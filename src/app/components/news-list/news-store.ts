@@ -36,9 +36,10 @@ export class NewsStore {
                 (currentNews) => new News(currentNews)
               );
 
+            this.storeLoaded = newsResponse.success;
+
             // Emit the changes
             this.newsSubject.next(Object.assign({}, this.dataStore).newsList);
-            this.storeLoaded = true;
           }
         );
     }

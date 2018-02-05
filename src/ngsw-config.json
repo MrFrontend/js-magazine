@@ -1,11 +1,11 @@
 {
   "index": "/index.html",
   "assetGroups": [{
-    "name": "app",
+    "name": "js-magazine",
     "installMode": "prefetch",
     "resources": {
       "files": [
-        "/favicon.ico",
+        "/assets/favicon/**",
         "/index.html"
       ],
       "versionedFiles": [
