@@ -1,27 +1,25 @@
 {
   "index": "/index.html",
-  "assetGroups": [{
-    "name": "js-magazine",
-    "installMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/favicon/**",
-        "/index.html"
-      ],
-      "versionedFiles": [
-        "/*.bundle.css",
-        "/*.bundle.js",
-        "/*.chunk.js"
-      ]
+  "assetGroups": [
+    {
+      "name": "js-magazine-app-shell",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/favicon/**",
+          "/index.html"
+        ],
+        "versionedFiles": [
+          "/*.bundle.css",
+          "/*.bundle.js",
+          "/*.chunk.js"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display+SC",
+          "https://fonts.gstatic.com/**"
+        ]
+      }
     }
-  }, {
-    "name": "assets",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
-      ]
-    }
-  }]
+  ]
 }
