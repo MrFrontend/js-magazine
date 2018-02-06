@@ -7,7 +7,6 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/assets/favicon/**",
           "/assets/manifest.json",
           "/index.html"
         ],
