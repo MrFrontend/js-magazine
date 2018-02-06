@@ -21,6 +21,16 @@
           "https://fonts.gstatic.com/**"
         ]
       }
+    },
+    {
+      "name": "favicon",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/favicon/**"
+        ]
+      }
     }
   ]
 }
