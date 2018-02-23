@@ -31,5 +31,18 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "news-api",
+      "version": "0",
+      "urls": ["/latest-news"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 10,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    }
   ]
 }
