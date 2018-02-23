@@ -17,7 +17,7 @@ import { RoutingModule } from './app.routing';
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
     RoutingModule,
     NewsListModule,
   ],
